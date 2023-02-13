@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* GET a new resource */
+router.get('/newEndpoint', function(req, res, next) {
+  res.send({ yourParam: req.query.someParam });
+});
+
 module.exports = router;
