@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize(process.env.CONNECTION_URI, {
+const sequelize = new Sequelize(process.env.CONNECTION_URL, {
   dialect: 'postgres',
   protocol: 'postgres',
 });
